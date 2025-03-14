@@ -164,16 +164,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         // 使用映射更新图片 | Update the image using the mapping
         const imageMap = {
-            1: "assets/images/puzzle.png",  // 震惊
-            2: "assets/images/benben.jpg",    // 思考
-            3: "assets/images/angry.png",    // 生气
-            4: "assets/images/crying.png",   // 哭
+            1: "assets/images/puzzle.webp",  // 震惊
+            2: "assets/images/benben.webp",    // 思考
+            3: "assets/images/angry.webp",    // 生气
+            4: "assets/images/crying.webp",   // 哭
         };
         if (clickCount in imageMap) {
             elements.mainImage.src = imageMap[clickCount];
             console.info(`(将主图片更新为: ${imageMap[clickCount]}) | Updated the main image to: ${imageMap[clickCount]}`);
         } else if (clickCount >= 5) {
-            elements.mainImage.src = "assets/images/crying.png";
+            elements.mainImage.src = "assets/images/crying.webp";
             console.info('(将主图片更新为哭泣图片) | Updated the main image to the crying image');
         }
     });
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.body.innerHTML = `
             <div class="yes-screen">
                 <h1 class="yes-text"></h1>
-                <img src="assets/images/love.png" alt="Hug" class="yes-image">
+                <img src="assets/images/love.webp" alt="Hug" class="yes-image">
             </div>
         `;
         console.info('(已替换页面内容为表白成功页面) | Replaced the page content with the successful confession page');
