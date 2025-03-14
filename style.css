@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Lolita';
     src: url('assets/fonts/Lolita.woff2') format('woff2'),
-         url('assets/fonts/Lolita.woff') format('woff');
+        url('assets/fonts/Lolita.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,6 +53,7 @@ body {
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(-3px);
     }
@@ -99,7 +100,8 @@ input[type="text"]:focus {
 /* 操作行样式 */
 .action-row {
     display: flex;
-    justify-content: space-between; /* 确保按钮左右对半分 */
+    justify-content: space-between;
+    /* 确保按钮左右对半分 */
     align-items: center;
     width: 100%;
 }
@@ -108,9 +110,11 @@ input[type="text"]:focus {
 #confirmNameButton,
 #languageSelect.styled-select {
     flex: 1;
-    width: 48%; /* 确保按钮宽度为 50% */
+    width: 48%;
+    /* 确保按钮宽度为 50% */
     font-family: 'Lolita', Arial, sans-serif;
-    font-size: 4vw; /* 使用 vw 单位使字体自适应 */
+    font-size: 4vw;
+    /* 使用 vw 单位使字体自适应 */
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -269,6 +273,7 @@ input[type="text"]:focus {
         transform: translateY(100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -285,6 +290,7 @@ input[type="text"]:focus {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -300,6 +306,7 @@ input[type="text"]:focus {
     body {
         display: flex;
     }
+
     .container {
         position: absolute;
         top: 50%;
@@ -308,40 +315,50 @@ input[type="text"]:focus {
         width: auto;
         max-width: none;
     }
+
     #mainImage {
         width: 200px;
     }
+
     h1 {
         font-size: 20px;
         margin: 20px 0;
     }
+
     #confirmNameButton,
     #languageSelect.styled-select {
         font-size: 18px;
     }
+
     #languageSelect.styled-select {
         padding: 10px 40px 10px 15px;
         background-position: right 12px center;
     }
+
     .yes-text {
         font-size: 36px;
     }
+
     .yes-image {
         width: 300px;
     }
+
     input[type="text"] {
         font-size: 16px;
         width: 300px;
     }
+
     #nameInputContainer {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     #sidehead {
         width: 200px;
     }
+
     #xiaohongshuLink,
     #douyinLink,
     #repoLink {
@@ -357,6 +374,7 @@ input[type="text"]:focus {
         min-height: 100vh;
         padding: 15px;
     }
+
     #nameInputContainer {
         width: 95%;
         transform: none;
@@ -364,36 +382,44 @@ input[type="text"]:focus {
         top: auto;
         left: auto;
     }
+
     h1 {
         font-size: 6vw !important;
         margin: 10px 0;
     }
+
     .free-notice {
         font-size: 14px;
         margin: 5px 0;
         padding: 6px;
     }
+
     #confirmNameButton,
     #languageSelect.styled-select {
         font-size: 5.5vw;
         padding: 8px 15px;
         margin: 5px;
-        min-width: 45%; /* 确保按钮在移动端不会被挤压 */
+        min-width: 45%;
+        /* 确保按钮在移动端不会被挤压 */
     }
+
     input[type="text"] {
         font-size: 16px;
         width: 85%;
     }
+
     #xiaohongshuLink,
     #douyinLink,
     #repoLink {
         font-size: 14px;
         margin-top: 3px;
     }
+
     #mainImage,
     #sidehead {
         max-width: 150px;
     }
+
     .yes-text {
         font-size: 8vw;
         padding: 0 10px;
@@ -405,10 +431,12 @@ input[type="text"]:focus {
     h1 {
         font-size: 20px !important;
     }
+
     #confirmNameButton,
     #languageSelect.styled-select {
         font-size: 18px;
     }
+
     .free-notice {
         font-size: 12px;
     }
@@ -420,6 +448,7 @@ input[type="text"]:focus {
         transform: scale(0.85);
         padding-top: 5px;
     }
+
     #sidehead {
         max-width: 100px;
     }
